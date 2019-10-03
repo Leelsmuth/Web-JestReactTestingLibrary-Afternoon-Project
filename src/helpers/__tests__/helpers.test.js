@@ -50,8 +50,7 @@ describe("personMaker", () => {
     });
   });
 
-  // write more tests! <===========================================
-  // it("takes first parameter as string and second parameter as integer", () => {
-  //   expect(() => helpers.personMaker(4, "peter")).toThrow();
-  // });
+  it("returns null if anything other than two arguments are passed in", () => {
+    expect(() => helpers.personMaker("arg")).toThrow();
+  });
 });
